@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            Link("View Our Terms of Service",
-                  destination: URL(string: "ExercisesView")!)
+            NavigationView {
+                NavigationLink() {
+                    ExercisesView()
+                } label: {
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .foregroundColor(.accentColor)
+                    Text("Hello, world!")
+                    Link("View Our Terms of Service",
+                         destination: URL(string: "ExercisesView")!)
+                }
+            }
         }
         .padding()
     }
