@@ -8,15 +8,11 @@ struct ExerciseCellView: View {
     
     var body: some View {
         HStack {
-            Text(exercise.name)
             Circle()
                 .frame(width: 20, height: 20)
                 .foregroundColor(exercise.dificulty)
-            ForEach(exercise.muscles, id: \.self) { muscle in
-                Text(muscle)
-            }
+            Text(exercise.name)
             Spacer()
-            Text(exercise.imageURL)
             AsyncImage(url: url) { image in
                 image
                     .resizable()
@@ -26,6 +22,7 @@ struct ExerciseCellView: View {
                 Text("Image de l'exercice")
             }
         }
+        .padding()
     }
 }
 

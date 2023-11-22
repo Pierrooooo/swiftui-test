@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  workout-app
-//
-//  Created by CAILLET Pierre on 20/11/2023.
-//
-
 import SwiftUI
 
 struct ExercisesView: View {
@@ -20,15 +13,28 @@ struct ExercisesView: View {
     var body: some View {
             
             VStack {
-                List {
+                Text("Exercises")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(.bottom)
+                
+                ScrollView {
+                    Text("Swipe left to delete")
+                        .padding(.trailing, 20)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                        .foregroundColor(.mint)
                     ForEach(exercises) { exercise in
                         NavigationLink() {
                             ExerciseDetailView(exercise: exercise)
                         } label: {
                             ExerciseCellView(exercise: exercise)
                         }
+                        Divider()
+                    }.onDelete { indexSet in
+                        exercises.remove(atOffsets: indexSet)
                     }
                 }
+                
 
                 HStack {
                     VStack {
@@ -58,9 +64,8 @@ struct ExercisesView: View {
                         Text("Ajouter")
                     }
                 }
+                .padding()
             }
-            .padding()
-            .navigationTitle("Exercices")
         }
     
 }

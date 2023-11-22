@@ -1,25 +1,28 @@
-//
-//  ContentView.swift
-//  workout-app
-//
-//  Created by CAILLET Pierre on 20/11/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
             NavigationView {
-                NavigationLink() {
-                    ExercisesView()
-                } label: {
-                    Image(systemName: "globe")
-                        .imageScale(.large)
-                        .foregroundColor(.accentColor)
-                    Text("Hello, world!")
-                    Link("View Our Terms of Service",
-                         destination: URL(string: "ExercisesView")!)
+                ScrollView {
+                    VStack(alignment: .center) {
+                        NavigationLink() {
+                            ExercisesView()
+                        } label: {
+                            Image(systemName: "dumbbell")
+                                .imageScale(.large)
+                                .foregroundColor(.accentColor)
+                            Text("Exercises")
+                        }
+                        NavigationLink() {
+                            ProgramsView()
+                        } label: {
+                            Image(systemName: "dumbbell")
+                                .imageScale(.large)
+                                .foregroundColor(.accentColor)
+                            Text("Programs")
+                        }
+                    } . frame(height: . infinity)
                 }
             }
         }
