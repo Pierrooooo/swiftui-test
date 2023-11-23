@@ -17,19 +17,18 @@ struct ExercisesView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.bottom)
+                Text("Swipe left to delete")
+                    .padding(.trailing, 20)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .foregroundColor(.mint)
                 
-                ScrollView {
-                    Text("Swipe left to delete")
-                        .padding(.trailing, 20)
-                        .frame(maxWidth: .infinity, alignment: .trailing)
-                        .foregroundColor(.mint)
+                List {
                     ForEach(exercises) { exercise in
                         NavigationLink() {
                             ExerciseDetailView(exercise: exercise)
                         } label: {
                             ExerciseCellView(exercise: exercise)
                         }
-                        Divider()
                     }.onDelete { indexSet in
                         exercises.remove(atOffsets: indexSet)
                     }

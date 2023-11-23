@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D2534452B0FA9B600C13002 /* CodableColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2534442B0FA9B600C13002 /* CodableColor.swift */; };
 		8D4F0C342B0CDFD3006A43F8 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0C332B0CDFD3006A43F8 /* Exercise.swift */; };
 		8D4F0C362B0CE6CF006A43F8 /* ExerciseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0C352B0CE6CF006A43F8 /* ExerciseDetailView.swift */; };
 		8D4F0C382B0CF364006A43F8 /* ExerciseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4F0C372B0CF364006A43F8 /* ExerciseCellView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D2534442B0FA9B600C13002 /* CodableColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableColor.swift; sourceTree = "<group>"; };
 		8D4F0C332B0CDFD3006A43F8 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		8D4F0C352B0CE6CF006A43F8 /* ExerciseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailView.swift; sourceTree = "<group>"; };
 		8D4F0C372B0CF364006A43F8 /* ExerciseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		8DE5B16F2B0B6BDD00E77DDE = {
 			isa = PBXGroup;
 			children = (
+				8D2534442B0FA9B600C13002 /* CodableColor.swift */,
 				8DE5B17A2B0B6BDD00E77DDE /* workout-app */,
 				8DE5B1792B0B6BDD00E77DDE /* Products */,
 			);
@@ -163,6 +166,7 @@
 			files = (
 				8DE5B17E2B0B6BDD00E77DDE /* ContentView.swift in Sources */,
 				8D4F0C362B0CE6CF006A43F8 /* ExerciseDetailView.swift in Sources */,
+				8D2534452B0FA9B600C13002 /* CodableColor.swift in Sources */,
 				8D4F0C382B0CF364006A43F8 /* ExerciseCellView.swift in Sources */,
 				8DC7E9BB2B0E3B7700950824 /* ProgramCellView.swift in Sources */,
 				8DC7E9B72B0E37BB00950824 /* ProgramsView.swift in Sources */,

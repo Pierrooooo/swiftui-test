@@ -1,10 +1,3 @@
-//
-//  ProgramCellView.swift
-//  workout-app
-//
-//  Created by CAILLET Pierre on 22/11/2023.
-//
-
 import SwiftUI
 
 struct ProgramCellView: View {
